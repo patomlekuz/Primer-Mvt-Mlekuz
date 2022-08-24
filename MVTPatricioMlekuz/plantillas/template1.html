@@ -7,20 +7,44 @@
     <title>Familiares</title>
 </head>
 <body>
-    <h1>Familia fue guardada con exito!</h1> 
+    <h1 style="color:red">Familia fue guardada con exito!</h1> 
     <ul>
-        <li>Familia: {{nombre1}}</li>
-        <li>Apellido: {{apellido1}}</li>
-        <li>edad: {{edad1}}</li>
-        <li>Familia: {{nombre2}}</li>
-        <li>Apellido: {{apellido2}}</li>
-        <li>edad: {{edad2}}</li>
-        <li>Familia: {{nombre3}}</li>
-        <li>Apellido: {{apellido3}}</li>
-        <li>edad: {{edad3}}</li>
+        <h4>Familia nro 1</h4> 
+        <li>Familia: {{nombre}}</li>
+        <li>Apellido: {{apellido}}</li>
+        <li>edad: {{edad}}</li>
+        <h4>Familia nro 2</h4>  
+        <li>Familia: {{nombre_1}}</li>
+        <li>Apellido: {{apellido_1}}</li>
+        <li>edad: {{edad_1}}</li>
+        <h4>Familia nro 3</h4> 
+        <li>Familia: {{nombre_2}}</li>
+        <li>Apellido: {{apellido_2}}</li>
+        <li>edad: {{edad_2}}</li>
     </ul>
+    <h2>lista nombres</h2>
+    <ul>
+    {% for n in lista_nombres %}
+      
+        <li>Nombre de los integrantes de la familia: {{ n }}</li>
+    
+    {% endfor %}
+    </ul>
+    <h2>lista apellidos</h2>
+    <ul>
+    {% for n in lista_apellidos %}
+          
+        <li>apellido de los integrantes de la familia: {{ n }}</li>
         
-
-
+    {% endfor %}
+        </ul>
+    <h2>lista edades</h2>
+        <ul>
+    {% for n in lista_edades %}
+              
+        <li>edad de los integrantes de la familia: {{ n }}</li>
+            
+    {% endfor %}
+            </ul>   
 </body>
 </html>
